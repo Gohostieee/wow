@@ -35,7 +35,7 @@
             return request;
         }
     });
-    await server.start();
+    await server.start(parseInt(process.env.PORT, 10) || 3000);
 
     // Get the local IP address
     const networkInterfaces = os.networkInterfaces();
