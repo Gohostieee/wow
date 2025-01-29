@@ -91,3 +91,7 @@ dbIu/5YW1Q==
     console.log(`Server running on port ${server.port}`);
     console.log(`Connect to the proxy server from your phone using IP: ${localIp}:${server.port}`);
 })();
+
+module.exports = (req, res) => {
+    res.send('Hello from Vercel!');
+  };
